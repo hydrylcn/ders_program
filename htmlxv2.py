@@ -193,4 +193,4 @@ html_template += """
 with open("ders_programi.html", "w", encoding="utf-8") as f:
     f.write(html_template)
 
-print("İşlem başarılı! Gün, Hoca ve Sınıf filtreleri aktif edildi.")
+print("İşlem başarılı! Ders programı hazırlandı ve filtreler aktif edildi.")
