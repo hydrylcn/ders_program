@@ -190,7 +190,7 @@ html_template += """
 """
 
 # 4. HTML dosyasını kaydet
-with open("ders_programi.html", "w", encoding="utf-8") as f:
+with open("ders_programi_tablo.html", "w", encoding="utf-8") as f:
     f.write(html_template)
 
 print("İşlem başarılı! Ders programı hazırlandı ve filtreler aktif edildi.")
