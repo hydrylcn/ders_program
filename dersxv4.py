@@ -180,7 +180,7 @@ def save_to_master_excel(schedule_data):
     df = pd.DataFrame(schedule_data)
     master_df = pd.DataFrame(index=DAYS, columns=SLOTS).fillna("")
     for (day, slot), group in df.groupby(['day', 'slot']):
-        lines = [f"{r['classroom']}: {r['ders_adi']} ({r['sinif']}) - {r['isim']}" for _, r in
+        lines = [f"{r['classroom']}: {r['ders_adi']} [{r['sinif']}] - {r['isim']}" for _, r in
                  group.sort_values(by='classroom').iterrows()]
         master_df.at[day, slot] = "\n".join(lines)
     with pd.ExcelWriter(OUTPUT_FILE, engine='xlsxwriter') as writer:
