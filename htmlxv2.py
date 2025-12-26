@@ -104,7 +104,7 @@ html_template = f"""
 <body>
 
 <div class="container">
-    <h1>📅 İşletme Bölümü Ders Programı</h1>
+    <h1>📅 İktisadi İdari Bilimler Ders Programı</h1>
 
     <div class="filters">
         <div class="filter-group">
